@@ -3,10 +3,10 @@ import 'package:google_fonts/google_fonts.dart';
 
 class AppColors {
   // ── Backgrounds ───────────────────────────────────────────────────────
-  static const Color bg      = Color(0xFFFFFFFF); // pure white
-  static const Color surface = Color(0xFFF9F9F9); // very light grey
+  static const Color bg      = Color(0xFFF6F4EF); // warm off-white
+  static const Color surface = Color(0xFFFFFFFF); // white
   static const Color card    = Color(0xFFFFFFFF); // white card
-  static const Color cardAlt = Color(0xFFF4F4F4); // subtle grey card
+  static const Color cardAlt = Color(0xFFF1EEE6); // subtle warm card
 
   // ── Gold Accents ──────────────────────────────────────────────────────
   static const Color accent      = Color(0xFFD4A853);
@@ -24,7 +24,7 @@ class AppColors {
   static const Color warning = Color(0xFFD29922);
 
   // ── Border ───────────────────────────────────────────────────────────
-  static const Color border = Color(0xFFE8E8E8); // light grey border
+  static const Color border = Color(0xFFEBE7DC); // soft warm border
 
   // ── Gradients ────────────────────────────────────────────────────────
   static const LinearGradient goldGradient = LinearGradient(
@@ -44,6 +44,16 @@ class AppColors {
     begin: Alignment.topCenter,
     end: Alignment.bottomCenter,
   );
+}
+
+class AppShadows {
+  static List<BoxShadow> get soft => [
+        BoxShadow(
+          color: const Color(0xFF1A1405).withOpacity(0.05),
+          blurRadius: 16,
+          offset: const Offset(0, 6),
+        ),
+      ];
 }
 
 class AppTheme {

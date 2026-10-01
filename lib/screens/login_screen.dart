@@ -76,7 +76,7 @@ class _LoginScreenState extends State<LoginScreen>
       body: Container(
         decoration: const BoxDecoration(
           gradient: LinearGradient(
-            colors: [Color(0xFFFFFFFF), Color(0xFFFFFEF8), Color(0xFFFFF9EE)],
+            colors: [Color(0xFFFFFFFF), Color(0xFFFBF7EC), Color(0xFFF3EBD6)],
             begin: Alignment.topCenter,
             end: Alignment.bottomCenter,
           ),
@@ -154,7 +154,7 @@ class _LoginScreenState extends State<LoginScreen>
                         padding: const EdgeInsets.all(28),
                         decoration: BoxDecoration(
                           color: AppColors.surface,
-                          borderRadius: BorderRadius.circular(24),
+                          borderRadius: BorderRadius.circular(28),
                           border: Border.all(color: AppColors.border),
                           boxShadow: [
                             BoxShadow(
@@ -238,8 +238,8 @@ class _LoginScreenState extends State<LoginScreen>
                               child: ElevatedButton(
                                 onPressed: isLoading ? null : login,
                                 style: ElevatedButton.styleFrom(
-                                  backgroundColor: AppColors.accent,
-                                  foregroundColor: Colors.black,
+                                  backgroundColor: const Color(0xFF1B1710),
+                                  foregroundColor: AppColors.accentLight,
                                   shape: RoundedRectangleBorder(
                                     borderRadius: BorderRadius.circular(12),
                                   ),
@@ -250,7 +250,7 @@ class _LoginScreenState extends State<LoginScreen>
                                         height: 22,
                                         child: CircularProgressIndicator(
                                           strokeWidth: 2.5,
-                                          color: Colors.black,
+                                          color: AppColors.accentLight,
                                         ),
                                       )
                                     : Text(

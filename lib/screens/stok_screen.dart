@@ -169,7 +169,7 @@ class _StokScreenState extends State<StokScreen> {
                   decoration: BoxDecoration(
                     color: AppColors.card,
                     borderRadius: BorderRadius.circular(12),
-                    border: Border.all(color: AppColors.border),
+                    border: Border.all(color: AppColors.border), boxShadow: AppShadows.soft,
                   ),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,

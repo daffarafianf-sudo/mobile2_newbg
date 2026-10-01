@@ -97,7 +97,7 @@ class _RiwayatScreenState extends State<RiwayatScreen>
             decoration: BoxDecoration(
               color: AppColors.surface,
               borderRadius: BorderRadius.circular(12),
-              border: Border.all(color: AppColors.border),
+              border: Border.all(color: AppColors.border), boxShadow: AppShadows.soft,
             ),
             child: TextField(
               controller: _searchCtrl,
@@ -135,7 +135,7 @@ class _RiwayatScreenState extends State<RiwayatScreen>
           decoration: BoxDecoration(
             color: AppColors.surface,
             borderRadius: BorderRadius.circular(12),
-            border: Border.all(color: AppColors.border),
+            border: Border.all(color: AppColors.border), boxShadow: AppShadows.soft,
           ),
           child: TabBar(
             controller: _tabController,
@@ -299,7 +299,7 @@ class _RiwayatCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: AppColors.card,
           borderRadius: BorderRadius.circular(16),
-          border: Border.all(color: AppColors.border),
+          border: Border.all(color: AppColors.border), boxShadow: AppShadows.soft,
         ),
         child: Padding(
           padding: const EdgeInsets.all(16),
@@ -796,7 +796,7 @@ class _DetailCard extends StatelessWidget {
       decoration: BoxDecoration(
         color: AppColors.card,
         borderRadius: BorderRadius.circular(16),
-        border: Border.all(color: AppColors.border),
+        border: Border.all(color: AppColors.border), boxShadow: AppShadows.soft,
       ),
       child: child,
     );
@@ -844,7 +844,7 @@ class _ProductRow extends StatelessWidget {
             decoration: BoxDecoration(
               color: AppColors.surface,
               borderRadius: BorderRadius.circular(10),
-              border: Border.all(color: AppColors.border),
+              border: Border.all(color: AppColors.border), boxShadow: AppShadows.soft,
             ),
             child: const Center(
               child: Text('🧥', style: TextStyle(fontSize: 20)),

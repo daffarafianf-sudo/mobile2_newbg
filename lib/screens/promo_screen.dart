@@ -783,7 +783,7 @@ class _AjukanPromoSheetState extends State<_AjukanPromoSheet> {
                           decoration: BoxDecoration(
                             color: AppColors.bg,
                             borderRadius: BorderRadius.circular(12),
-                            border: Border.all(color: AppColors.border),
+                            border: Border.all(color: AppColors.border), boxShadow: AppShadows.soft,
                           ),
                           child: Row(
                             children: [
@@ -823,7 +823,7 @@ class _AjukanPromoSheetState extends State<_AjukanPromoSheet> {
                           decoration: BoxDecoration(
                             color: AppColors.bg,
                             borderRadius: BorderRadius.circular(12),
-                            border: Border.all(color: AppColors.border),
+                            border: Border.all(color: AppColors.border), boxShadow: AppShadows.soft,
                           ),
                           child: Row(
                             children: [
